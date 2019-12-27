@@ -1,0 +1,17 @@
+{
+  "name": "vue_components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./assets/main.js",
+  "scripts": {
+    "babel": "babel --presets assets/index.js -o assets/main.bundle.js",
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "http-server": "^0.12.0"
+  }
+}

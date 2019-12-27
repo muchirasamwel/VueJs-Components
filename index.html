@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Components</title>
+    <link rel="stylesheet" href="assets/style/main.css">
+</head>
+<body >
+    <div id="componentApp">
+        <p >{{message}}</p>
+        <div>
+            <v-button @changemessage="changeMessage"></v-button>
+        </div>
+
+        <hr>
+        <!--    REUSABLE COMPONENT    -->
+        <div>
+            <h2>My list</h2>
+            <ol>
+                <blue-item data="Item1"></blue-item>
+                <blue-item data="Item2"></blue-item>
+                <blue-item data="Item3"></blue-item>
+                <blue-item data="Item4"></blue-item>
+            </ol>
+        </div>
+        <hr>
+        <!--  Component within components      -->
+        <h2>Compnent within component</h2>
+        <v-list></v-list>
+
+        <hr>
+        <div>
+            <h2>Components Slot</h2>
+            <parent-comp></parent-comp>
+        </div>
+
+        <hr>
+        <my-table></my-table>
+    </div>
+</body>
+<script src="assets/js/vue.js"></script>
+<script src="assets/js/main.js"></script>
+</html>

@@ -1,0 +1,17 @@
+.v-table {
+  border: 1px solid black;
+  padding: 10px;
+}
+.v-table thead {
+  background-color: black;
+  color: white;
+}
+.v-table td {
+  padding: 10px;
+  margin: 3px;
+}
+.v-table tr {
+  border-bottom: 2px solid black !important;
+}
+
+/*# sourceMappingURL=main.css.map */
